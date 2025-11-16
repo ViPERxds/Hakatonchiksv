@@ -60,14 +60,12 @@ cd hakaton
 cat > .env << EOF
 TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
 API_URL=http://api:8000
-DATABASE_URL=sqlite:///./data/invoices.db
 EOF
 
 # Windows PowerShell
 @"
 TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
 API_URL=http://api:8000
-DATABASE_URL=sqlite:///./data/invoices.db
 "@ | Out-File -FilePath .env -Encoding UTF8
 ```
 
@@ -112,7 +110,6 @@ pip install -r requirements.txt
 ```bash
 TELEGRAM_BOT_TOKEN=your_telegram_bot_token_here
 API_URL=http://localhost:8000
-DATABASE_URL=sqlite:///./invoices.db
 ```
 
 4. Запустите сервисы:
